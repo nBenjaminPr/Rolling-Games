@@ -1,0 +1,430 @@
+*{
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+::selection{
+    background-color: #fdcf74;
+}
+
+
+/*Login*/
+
+body{
+    margin: 0;
+    padding: 0;
+    background: url(../assets/Login/fondo-join.jpeg) no-repeat;
+    height: 70rem;
+    font-family: sans-serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+
+
+
+main{ 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.loginBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    min-height: 200px;
+    background: url(../assets/Login/soldier-light.webp);
+    border-radius: 10px;
+    padding: 40px;
+    box-sizing: border-box;
+    color: white;
+
+}
+
+.user{
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px
+}
+    
+
+.login-form{
+    width: 100%;
+    max-width: 500px;
+    
+}
+
+
+.login-form-welcome h1{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.txtb{
+    height: 50px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.txtb input{
+    width: 100%;
+    height: 50px;
+    border: 1px solid #e6e6e6;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 3px;
+    outline: 3px solid #fcaf1770;
+}
+
+
+.show-password-btn{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    fill: #999;
+}
+
+.checkbox{
+    display: inline-block;
+    margin-bottom: 20px;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+    
+}
+
+
+.checkbox input{
+    display: none;
+}
+
+.checkbox span::before{
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #4d4d4d;
+    left: 0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.checkbox span:after{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 6px;
+    border-bottom: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: rotate(-50deg);
+    box-sizing: border-box;
+    left: 4px;
+    top: 6px;
+    display: none;
+}
+
+.checkbox input:checked + span::after{
+    display: block;
+
+}
+
+.forgot-signin-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.link{
+    color: #8CBFD7;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: #fff;
+}
+
+/* .forgot-signin-container input{
+    width: 100px;
+    height: 38px;
+    border: none;
+    background-image: linear-gradient(90deg,#8CBFD7,#8CBFD7);
+    color: #fff;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.forgot-signin-container input:hover{
+    background: #8CBFD7;
+} */
+
+.create-account{
+    text-align: center;
+    color: #fff;
+    margin: 30px 0;
+}
+
+
+#button-change{
+    margin-top: 10px;
+}
+
+#btn-sing{
+    background-color: #8CBFD7;
+}
+
+
+.login-image{
+    display: flex;
+    justify-content: space-between;
+}
+
+.login-image a{
+    width: 42px;
+    margin: 0 5px;
+    overflow: hidden;
+}
+
+.login-image a img{
+    width: 150%;
+}
+
+/*Login*/
+
+
+/* MODAL EMAIL */
+
+#modal-pass{
+    background-color: #22007C;
+    color: white;
+}
+
+/* MODAL EMAIL */
+
+
+/* THEME DARK */
+
+#toggle{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 75px;
+    height: 40px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    position: relative;
+}
+#toggle::after{
+    content: '';
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    background: #8CBFD7;
+    top: 5px;
+    left: 5px;
+    border-radius: 50%;
+}
+
+
+body.dark-theme{
+    background-image: url(../assets/Login/ninja\ hd.jpg);
+}
+.dark-theme .loginBox{
+    background: url(../assets/Login/ninja\ hd.jpg);
+
+}
+.dark-theme #toggle{
+    background: #22007C;
+}
+.dark-theme #toggle::after{
+    background: transparent;
+    box-shadow: 10px 10px #fff;
+    top: -4px;
+    left: 30px;
+}
+
+.dark-theme #modal-pass{
+    background-image: url(../assets/Login/ninja\ hd.jpg);
+
+}
+
+.dark-theme #btn-sing {
+    background-color: #22007C;
+}
+
+.dark-theme .link{
+    color: white;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+.dark-theme .link:hover{
+    color: #22007C;
+}
+
+
+/* THEME DARK */
+
+
+
+
+
+
+
+
+/* MODAL INCORRECTO */
+
+.modalContainer{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.modalContainer .modal-content{
+    background-color: #4d4d4d;
+    margin: auto ;
+    padding: 25px;
+    border: 1px solid #22007C;
+    width: 60%;
+}
+
+
+.modalContainer .close{
+    color: red;
+    float: right ;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover, .close:focus{
+    color: #f7931e;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#butto-recover{
+    background-color: #28c6d1;
+}
+
+#butto-recover:hover {
+    background-color: #22007C;
+}
+
+#modal-pass{
+    background-image: url(../assets/Login/fondo-join.jpeg);
+}
+
+/* MODAL INCORRECTO */
+
+
+
+/* @media (min-width: 912px){
+
+    body{
+        height: 100rem;
+    }
+
+
+} */
+
+
+/* Footer */
+
+
+#padreFooter{
+    height: 100vh;
+    margin-top: 200px;
+}
+.footer {
+    position:absolute;
+    width: 100%;
+    background: #000000;
+    min-height: 100px;
+    padding: 5 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+}
+
+    .social-icon,
+    .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    
+}
+
+    .social-icon__item,
+    .menu__item {
+    list-style: none;
+}
+
+    .social-icon__link {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    
+}
+    .social-icon__link:hover {
+    transform: translateY(-10px);
+}
+
+    .menu__link {
+    font-size: 10;
+    color: rgb(160, 0, 88);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 500;
+}
+
+    .menu__link:hover {
+    opacity: 1;
+}
+
+    .footer p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+    @media(max-width: 280px) {
+    .footer p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+}
+
+
+/* Footer */

@@ -1,0 +1,27 @@
+#contact{
+    margin-top: 120px;
+    color: white; 
+    font-family:'Stick No Bills', sans-serif;
+}
+h1{
+    font-family:'Stick No Bills', sans-serif;
+}
+
+body {
+    background-image: url(../assets/Login/ninja\ hd.jpg);
+}
+
+#div-iframe{
+    position: relative;
+    padding-top: 25px;
+    height: 65vh;
+}
+#div-iframe iframe{
+    position: absolute;
+    top: 0;
+    width: 85%;
+    height: 100%;
+}
+#padreFooter{
+    height: 15vh;
+}

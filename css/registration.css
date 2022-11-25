@@ -1,0 +1,99 @@
+:root{
+    --color1: #02010A;
+    --color2: #04052E;
+    --color3: #140152;
+    --color4: #22007C;
+    --color5: #0D00A4;
+}
+body{
+    background-image: url("../assets/registration/fondo6.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size:auto;
+  
+}
+/* main{
+    width: 100%;
+    height: 93%;
+    margin-bottom: 30px;
+} */
+.imgUbic{
+    margin-top: 90px;
+}
+img{
+    border-radius: 50%;
+}
+
+#RegistrationTitle{
+    color: white;
+    font-size:30px;
+    font-family: 'Chakra Petch', sans-serif; 
+    font-weight: 800;
+    text-align: center;
+}
+
+.form{
+    background-color:rgba(2, 1, 10, 0.8);
+    padding: 10px 40px;
+    border-radius: 5%;
+    overflow: hidden;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+#labelRegistration{
+    color: white;
+}
+
+#irLogin{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+/* a:visited{
+    color: #0D00A4;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} */
+Button{
+    /* position: absolute; */
+    border: none;
+    color: #02010A;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg, var(--color5), var(--color3), var(--color4), var(--color5));
+    background-size: 300%;
+    border-radius: 30px;
+    cursor: pointer;
+    z-index: 1;
+}
+Button:hover{
+    animation: animation 8s linear infinite;
+    border: none;
+}
+@keyframes animation {
+    0%{background-position: 0%;}
+    100%{background-position: 400%;}
+}
+Button:before{
+    content: "";
+    top:-5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, var(--color5), var(--color3), var(--color4), var(--color5));
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+}
+Button:hover::before{
+    filter: blur(20px);
+}
+#padreFooter{
+    height: 25vh;
+}

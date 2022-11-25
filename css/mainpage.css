@@ -1,0 +1,74 @@
+body{
+  background-color: #140152;
+}
+
+.principal{
+  display: flex;
+  justify-content: center;
+  margin-top: 8%;
+}
+
+.title-categorie{font-family: 'Stick No Bills', sans-serif;
+text-transform: uppercase;
+}
+  
+  .card-title{
+font-family: 'Stick No Bills', sans-serif;
+text-align: center;
+text-transform: uppercase;
+}
+small{
+ position: absolute;
+bottom: 10px;
+}
+.card-text{
+  font-family: 'Stick No Bills', sans-serif;
+  text-align: start;
+  margin-top: 30px;
+  }
+  
+.imgFav{
+  height: 400px;
+  width: 800px;
+}
+.imgCat{
+  height: 300px;
+  /* width: 800px; */
+}
+.card-categorie {
+  background: transparent;
+  border: 2px solid red;
+  box-shadow: 2px 2px 15px #000000 inset;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico';
+}
+
+.card-categorie:hover {
+  color: red;
+  box-shadow: 2px 2px 15px red inset;
+}
+
+@media(max-width: 900px) {
+ .principal{
+  margin-top: 15%;
+ }
+}
+
+@media(min-width: 280px){
+  .imgCat{
+    height: 130px;
+  }
+}
+@media(min-width: 900px){
+  .imgCat{
+    height: 300px;
+  }
+}
+
+#padreFooter{
+  height: 30vh !important;
+}

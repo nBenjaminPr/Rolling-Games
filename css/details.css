@@ -1,0 +1,52 @@
+body{
+    background-color: black;
+}
+
+#game-container{
+    margin-top: 8% !important;
+}
+
+#padreFooter{
+    height: 20vh;
+}
+
+.test-img{
+    height: 50vh;
+    border-radius: 20px;
+    width: 30vw;
+}
+
+h1{
+    font-size: xx-large;
+    text-transform: uppercase;
+}
+.btnUbic{
+    height: 40px;
+    width: 120px;
+}
+@media(max-width: 900px) {
+    .test-img{
+        height: 200px;
+        width: 200px;
+        border-radius: 20px;
+        margin-top: 5vh !important;
+    }
+    .resp{
+        display: flex;
+        flex-direction: column;
+    }
+    #game-container{
+        margin-top: 30% !important;
+    }
+    #padreFooter{
+        height: 30vh;
+    }
+    .btnUbic{
+        margin-top: 5vh !important;
+    }
+    h2{
+        margin-top: 5vh !important;
+    }
+   }
+
+   

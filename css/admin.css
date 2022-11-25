@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(../assets/admin/soldao.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
+.rowTable{
+    color: white;
+}
+
+.admin{
+  color: red !important;
+}
+
+.imgGame{
+    width:70px;
+    height:70px;
+    border-radius: 5px;
+}
+
+#pagination ul li a{
+    background-color: black;
+    color: white;
+}
+.optionEdit{
+    color: black;
+}
+
+thead{
+    color: white;
+}
+
+#title{
+    color: white;
+}
+
+#masCategoria{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.inputCheck{
+    width:25px;
+    height:25px;
+    appearance: none;
+    border: 2px solid #888;
+}
+
+.inputCheck:checked {
+    background-color: #0B1717;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e")
+  }
+.modal{
+    background-image: url(../assets/admin/soldao.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.modal-content{
+    background-image: url(../assets/admin/soldao.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+select{
+    border-radius: 5px;
+    padding: 0.20rem;
+}
+
+#game-published{
+    width:22px;
+    height:22px;
+    border: 2px solid #888;
+    appearance: none;
+}
+
+#game-published:checked{
+    background-color: #0B1717;
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e")
+}
+
+@media screen and (max-width: 600px) {
+    table {
+        width:100%;
+    }
+    thead {
+        display: none;
+    }
+    tr:nth-of-type(2n) {
+        background-color: inherit;
+    }
+    tr td:first-child {
+        background: #f0f0f0;
+        font-weight:bold;
+        font-size:1.3em;
+    }
+    tbody td {
+        display: block;
+        text-align:center;
+    }
+    tbody td:before {
+        content: attr(data-th);
+        display: block;
+        text-align:center;
+    }
+    main{
+        height: 100%;
+    }
+}
+@media(max-width: 280px) {
+  .title{
+     display: none;
+  }
+  .play{
+    margin-left: auto;
+  }
+}
+@media(min-width: 281px) {
+  .titleFold{
+    display: none;
+  }
+}
+
+@media(min-width: 768px) {
+    main{
+        height: 100%;
+    }
+}
+
+@media(min-width: 1020px) {
+    main{
+        height: 100%;
+    }
+}
+ 
+.footer {
+    position: relative;
+    width: 100%;
+    background: #000000;
+    min-height: 100px;
+    padding: 5 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    margin-top: auto;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    
+}
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 10;
+    color: rgb(160, 0, 88);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 500;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+  @media(max-width: 280px) {
+    .footer p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: center;
+  }
+  }
+
+
+    
+@media(min-width: 768px){
+body{
+  height: 100% !important;
+    }
+footer{
+  height: 30vh;
+  margin-top: 40vh !important;
+}
+}
+
+@media(min-width: 913px){
+body{
+      height: 100% !important;
+    }
+    footer{
+      height: 40vh;
+      margin-top: 30vh !important;
+    }
+}
+
+@media(min-width: 1280px){
+      footer{
+        height: 50vh;
+        margin-top: 35vh !important;
+      }
+  }
+
+  @media(min-width: 1281px){
+        footer{
+          height: 25vh;
+          margin-top: 25vh !important;
+        }
+      
+    }

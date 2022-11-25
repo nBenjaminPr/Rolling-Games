@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Stick No Bills', sans-serif;
+}
+
+
+body{
+  padding: 0;
+  margin: 0;
+  background-image: linear-gradient(to right top,#02010A, #04052E, #140152, #22007C, #0D00A4, #18294a, #1d3357, #223e65);
+}
+
+.crash img{
+  width: 150px;
+  position: absolute;
+  left: 15%;
+  top: 55%;
+}
+
+.monkey img {
+  width: 150px;
+  position: absolute;
+  animation: animationFlyings 8s infinite linear;
+  top: 60%;
+  right: 10%;
+
+}
+
+
+.notify{
+  color: #fff; 
+  text-align: center;
+  margin-top: 120px;
+}
+.notify h3{
+  font-size: 110px;
+  margin: 30px 0;
+}
+.notify p{
+  font-size: 18px;
+}
+
+.notify button{
+  padding: 10px 30px;
+  border: 0;
+  background: #880000;
+  font-size: 18px;
+  border-radius: 5px;
+  color: white; 
+  outline:none;
+}
+.notify button:hover{
+  cursor: pointer;
+  background: #660000;
+}
+
+
+
+
+
+
+.forget-modal{
+  width: 400px;
+}
+
+#modal-error{
+  width: 140%;
+  height: 500px;
+}
+
+.modal-header{
+  width: 300px;
+  height: 500px;
+}
+
+
+
+
+
+
+.footer {
+    position:absolute;
+    width: 100%;
+    height: 20vh;
+    background: #000000;
+    min-height: 100px;
+    padding: 5 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    bottom: 0;
+    margin-top: auto;
+}
+
+
+.social-icon,
+.menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px 0;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    
+}
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 1rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 10;
+    color: rgb(160, 0, 88);
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 500;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+  }
+  
+  .footer p {
+    color: #ffffff;
+    margin: 10px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  
+
