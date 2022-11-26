@@ -30,7 +30,7 @@ const registration = (e) => {
     const AcceptanceRegistration1 = document.getElementById('AcceptanceRegistration').value;
 
     const Id = new Date().getTime();
-    const newUser = new User (Id, name, email, password,password,true,true);
+    const newUser = new User (Id, name, email, password,password,false,true);
     if (validateFieldsRegister(name, email, password, Repeatpassword)){
         const usersLS = JSON.parse(localStorage.getItem('users'));
         usersLS.push(newUser);
