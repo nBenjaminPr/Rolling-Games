@@ -23,8 +23,8 @@ games.forEach(game=>{
                 <div class="col-md-8">
                   <div class="card-body">
                     <h1 class="card-title">${game.name}</h1>
-                    <h2 class="card-text">
-                   ${game.description}
+                    <h2 class="card-text maxlength="100">
+                    ${game.description}
                     </h2>
                     <p class="card-text">
                       <small class="text-muted">Last updated 3 mins ago</small>
